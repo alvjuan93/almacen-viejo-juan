@@ -64,7 +64,7 @@ Este documento no contiene contraseñas, claves, tokens, correos privados ni dir
 ### Prioridad crítica
 
 1. **Actualizar Dokploy después de crear y probar una copia de seguridad.** La versión instalada es anterior a correcciones de seguridad publicadas en versiones posteriores. No actualizar sin respaldo y procedimiento de recuperación.
-2. **Activar 2FA en la cuenta propietaria.** Actualmente está desactivado. El propietario debe escanear el QR y guardar los códigos de recuperación fuera del servidor y del repositorio.
+2. **2FA activado en la cuenta propietaria.** Juan confirmó su activación el 27/09/2026. Los códigos de recuperación deben permanecer fuera del servidor y del repositorio.
 3. **Configurar copias de seguridad externas.** No hay destino S3. Se recomienda Cloudflare R2 o Backblaze B2 para respaldar la base PostgreSQL de Dokploy y `/etc/dokploy`.
 4. **No exponer el panel de Dokploy a Internet.** Mantener el puerto `3000` limitado a LAN/VPN. Para sitios públicos utilizar Cloudflare Tunnel.
 
@@ -117,7 +117,7 @@ El token de Cloudflare Tunnel debe guardarse únicamente como secreto/variable p
 ## Estado y próximos pasos seguros
 
 1. Esperar activación de los NS en Cloudflare.
-2. Activar 2FA con Juan presente.
+2. Confirmar periódicamente que el 2FA continúe activo y conservar los códigos de recuperación de forma segura.
 3. Crear destino de backup y obtener una copia restaurable.
 4. Actualizar Dokploy a la versión estable actual y verificar todos los servicios.
 5. Obtener acceso SSH por clave y completar la auditoría del host.
