@@ -34,6 +34,18 @@ docker compose -f compose.yaml -f compose.local.yaml up --build -d
 4. Para un dominio gestionado por Dokploy, seleccionar el servicio `deposito-hyn` y el puerto interno `8080`.
 5. No crear variables de entorno ni volúmenes para esta versión.
 
+## Publicar cambios con control previo
+
+Después de probar los cambios localmente:
+
+```powershell
+.\publicar.ps1 -Mensaje "Descripción breve del cambio"
+```
+
+Si Docker está disponible, el script valida el Compose y construye la imagen. En esta PC Docker no está instalado, por lo que Dokploy hará esa validación y construcción. El script siempre muestra los cambios y solo crea el commit y lo envía cuando se escribe exactamente `PUBLICAR`. El `push` a `main` activa el despliegue automático en Dokploy.
+
+El relevamiento y el orden de endurecimiento del servidor están en `RELEVAMIENTO-ZEUS.md`.
+
 ## Migrar a otro proveedor
 
 Copiar la carpeta completa al nuevo servidor y ejecutar `docker compose up --build -d`. La imagen resultante contiene todos los datos necesarios para mostrar la web.

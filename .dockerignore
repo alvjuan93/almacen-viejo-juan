@@ -3,3 +3,6 @@
 *.zip
 *.log
 README.md
+*.md
+*.ps1
+compose.local.yaml
