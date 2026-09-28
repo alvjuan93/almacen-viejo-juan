@@ -101,7 +101,7 @@ Ventajas:
 - Oculta la IP de origen y permite reglas gratuitas de seguridad y caché.
 - Facilita migrar Zeus a otro proveedor: se mueve el Compose y se cambia el destino del túnel.
 
-Nombre público recomendado: `almacen.zeuslab.com.ar`. El dominio raíz `zeuslab.com.ar` puede redirigir allí más adelante.
+Nombre público activo: `almacenelviejojuan.zeuslab.com.ar`. El dominio raíz `zeuslab.com.ar` puede redirigir allí más adelante.
 
 El token de Cloudflare Tunnel debe guardarse únicamente como secreto/variable protegida en Dokploy. Nunca debe entrar en GitHub, archivos Markdown, capturas ni mensajes.
 
@@ -121,7 +121,7 @@ El token de Cloudflare Tunnel debe guardarse únicamente como secreto/variable p
 3. Crear destino de backup y obtener una copia restaurable.
 4. Actualizar Dokploy a la versión estable actual y verificar todos los servicios.
 5. Obtener acceso SSH por clave y completar la auditoría del host.
-6. Crear Cloudflare Tunnel y publicar `almacen.zeuslab.com.ar`.
+6. Mantener el Cloudflare Tunnel y publicar `almacenelviejojuan.zeuslab.com.ar`.
 7. Probar desde datos móviles, revisar HTTPS, encabezados, imágenes, carrito y WhatsApp.
 
 ## Referencias oficiales
